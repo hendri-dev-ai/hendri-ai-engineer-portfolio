@@ -592,6 +592,48 @@
         .delay-4 { transition-delay: 0.6s; }
         .delay-5 { transition-delay: 0.75s; }
         .delay-6 { transition-delay: 0.9s; }
+        /* PREMIUM PROFILE PHOTO */
+.profile-photo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* FOTO BULAT + PREMIUM EFFECT */
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* INI YANG BUAT LINGKARAN */
+    object-fit: cover;
+    
+    border: 2px solid rgba(0, 242, 255, 0.4);
+
+    /* Glow premium */
+    box-shadow:
+        0 0 10px rgba(0, 242, 255, 0.4),
+        0 0 25px rgba(0, 242, 255, 0.3),
+        inset 0 0 10px rgba(0, 242, 255, 0.2);
+
+    transition: all 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.profile-photo:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 20px rgba(0, 242, 255, 0.6),
+        0 0 40px rgba(0, 242, 255, 0.5),
+        0 0 60px rgba(0, 242, 255, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profile-photo-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
     </style>
 </head>
 <body>
