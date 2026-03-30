@@ -41,6 +41,7 @@
             font-family: 'Outfit', sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
+            max-width: 100%;
         }
 
         /* Utilities */
@@ -200,11 +201,19 @@
             align-items: center;
         }
 
+       /* Desktop */
         .hero-title {
             font-size: 4.5rem;
             line-height: 1.1;
             margin-bottom: 1.5rem;
         }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
 
         .hero-subtitle {
             font-size: 1.5rem;
@@ -634,6 +643,14 @@
         text-align: center;
     }
 }
+        img, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
     </style>
 </head>
 <body>
@@ -732,6 +749,10 @@
                 <div class="badge-item reveal slide-up delay-5">
                     <i class="ph-bold ph-gear-six"></i>
                     <span>Install & Setting OpenClaw</span>
+                </div>
+                <div class="badge-item reveal slide-up delay-6">
+                    <i class="ph-bold ph-brain"></i>
+                    <span>Artificial Intelligent Tutoring</span>
                 </div>
             </div>
         </section>
